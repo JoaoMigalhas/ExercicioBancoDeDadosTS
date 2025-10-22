@@ -17,27 +17,45 @@ PostgreSQL – Banco de dados relacional onde os dados são armazenados.
 🧠 Extensões e Dependências
 
 📦 Dependências de Produção
-Biblioteca	Função
+
+Biblioteca	|| Função
+
 pg	Biblioteca oficial do PostgreSQL para Node.js. Responsável pela conexão e execução de comandos SQL.
+
 readline-sync	Permite ler entradas do usuário pelo terminal de forma síncrona (sem precisar de Promises).
 
 🧰 Dependências de Desenvolvimento
-Biblioteca	Função
+
+Biblioteca	|| Função
+
 typescript	Compilador TypeScript, responsável por converter .ts em .js.
+
 @types/node	Tipos para as APIs nativas do Node.js (como fs, path, etc.).
+
 @types/pg	Tipos para a biblioteca pg, garantindo IntelliSense e segurança de tipos.
+
 @types/readline-sync	Tipos para o readline-sync, permitindo autocompletar e validações no TypeScript.
 
 ⚙️ Configuração do Projeto
+
 1️⃣ Inicializar o projeto Node.js (caso ainda não tenha)
+
 npm init -y
+
 2️⃣ Instalar as bibliotecas de produção
+
 npm install pg readline-sync
+
 3️⃣ Instalar o TypeScript e os tipos (dependências de desenvolvimento)
+
 npm install -D typescript @types/node @types/pg @types/readline-sync
-4️⃣ Criar o arquivo de configuração do TypeScript
+
+4️⃣ Criar o arquivo de configuração do 
+
 npx tsc --init
+
 5️⃣ Exemplo de tsconfig.json
+
 {
   "compilerOptions": {
     "target": "es2020",
